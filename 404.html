@@ -21,7 +21,7 @@
     <!-- START SVG SPRITE-->
     <!-- END SVG SPRITE-->
     <!-- START LOADER-->
-    <div class='loader-wrap'>
+    <div class='loader-wrap lenis lenis-stop' data-lenis-prevent data-lenis-prevent-wheel>
         <div class="loader-bg"></div>
         <div class="loader-front">
             <div class="loader-logo">
@@ -51,7 +51,7 @@
 
     <!-- END LOADER-->
     <!-- START POPUP MODAL-->
-    <div class="form-wrapper" data-form-wrapper>
+    <div class="form-wrapper" data-form-wrapper data-lenis-prevent>
         <div class="form-wrapper__block">
             <button class="form-close" data-close-form><span>Закрити</span>
                 <div class="burger__close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +82,7 @@
             </form>
         </div>
     </div>
-    <div class="mobile-callback" data-mobile-callback-popup>
+    <div class="mobile-callback" data-mobile-callback-popup data-lenis-prevent>
         <div class="mobile-callback__block"><a class="button button_red" href="tel:+380969956364">Виклик +38 (096) 995-63-64</a>
             <button class="button" type="button" data-call-form data-close-mobile-callback>ЗАПИСАТИСЯ НА ПЕРЕГЛЯД</button>
             <button class="mobile-callback-close" data-close-form></button>
@@ -94,7 +94,7 @@
     </div>
     <!-- END POPUP MODAL-->
     <!-- START MENU-->
-    <nav class="menu" id="menu">
+    <nav class="menu" id="menu" data-lenis-prevent>
         <div class="menu__body menu-body">
             <div class="menu-body__menu">
                 <ul class="menu-body__list">
@@ -333,7 +333,8 @@
         </div>
     </div>
     <script defer src="./assets/scripts/vendors.bundle.js"></script>
-    <script src="./assets/scripts/index.bundle.js"></script>
+    <script defer src="./assets/scripts/index.bundle.js"></script>
+    <script defer src="./assets/scripts/notFound.bundle.js"></script>
 </body>
 
 </html>
